@@ -1,0 +1,43 @@
+body {
+    padding: 0px;
+    background-image: url(thinking.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    box-sizing: border-box;
+}
+
+#about {
+    position: relative;
+    top: 20px;
+    left: 550px;
+    display: block;
+    width: 800px;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+h1 {
+    color: rgb(252, 7, 7);
+}
+
+span {
+    color: rgb(9, 12, 240);
+}
+
+p {
+    text-align: center;
+    width: 500px;
+    padding-left: 160px;
+}
+
+#container .left {
+    float: left;
+}
+
+#container .right {
+    float: right;
+}

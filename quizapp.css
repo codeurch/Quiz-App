@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: cadetblue;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: none; */
+}
+
+.container {
+    max-width: 700px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 70px;
+    border-radius: 20px;
+}
+
+.container.hide {
+    display: none;
+}
+
+.main-box h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.main-box p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: black;
+    font-weight: 200px;
+}
+
+.main-box p span {
+    font-weight: bold;
+}
+
+.btn {
+    color: black;
+    background-color: grey;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quiz-box p {
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.quiz-box .question-number {
+    font-size: 22px;
+    color: black;
+    font-weight: 400px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+
+/* .quiz-box .question-number,
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn,
+.quiz-box .answer-indicator {
+    width: 100%;
+    float: left;
+} */
+
+.quiz-box .question-text {
+    font-size: 19px;
+    color: black;
+    line-height: 28px;
+    font-weight: 400px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.quiz-box .option-container {}
+
+.quiz-box .option-container .option {
+    background-color: grey;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: black;
+    border-radius: 11px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.quiz-box .btn {
+    margin: 15px 0;
+}
+
+.quiz-box .answer-indicator {
+    border-top: 1px solid black;
+}
+
+.quiz-box .answer-indicator div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 15px;
+}
