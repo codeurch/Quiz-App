@@ -11,32 +11,34 @@ body {
     /* outline: none; */
 }
 
+#parent{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    max-width: 700px;
     background-color: white;
-    margin: 50px auto;
-    padding: 70px;
+    padding: 20px;
     border-radius: 20px;
+    margin: 5px;
 }
 
 .container.hide {
-    display: none;
+    display: block;
+}
+
+.main-box{
+    width: 25%;
 }
 
 .main-box h3 {
     color: black;
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 20px;
-    line-height: 30px;
 }
 
 .main-box p {
-    font-size: 25px;
-    margin-bottom: 20px;
-    line-height: 25px;
     color: black;
-    font-weight: 200px;
 }
 
 .main-box p span {
@@ -46,7 +48,6 @@ body {
 .btn {
     color: black;
     background-color: grey;
-    padding: 15px 25px;
     border: none;
     border-radius: 10px;
     font-weight: bold;
@@ -54,11 +55,16 @@ body {
     display: inline-block;
 }
 
+.quiz-box{
+    width: 60%;
+}
+
+
 .quiz-box p {
     text-align: center;
     font-size: 30px;
     color: red;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .quiz-box .question-number {
@@ -111,11 +117,15 @@ body {
 }
 
 .quiz-box .answer-indicator div {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     display: inline-block;
     background-color: grey;
     border-radius: 50%;
     margin-right: 3px;
     margin-top: 15px;
+}
+
+.result-box{
+    width: 20%;
 }

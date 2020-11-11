@@ -13,6 +13,6 @@ nextBtn.addEventListener('click', e => {
         let index = 0; index < quizQuestion[questionCounter].options.length; index++
     ) {
         console.log(quizQuestion[questionCounter].options[index]);
-        optionContainer.innerHTML = `<div>${quizQuestion[questionCounter].options[index]}</div>`;
+        optionContainer.innerHTML = `<div>${quizQuestion[questionCounter].options}</div>`;
     }
 });

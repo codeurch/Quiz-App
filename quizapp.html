@@ -9,47 +9,50 @@
 </head>
 
 <body>
-    <div class="main-box container hide">
-        <h3>Instruction:</h3>
-        <p>Total number of questions: <span class="total-question">5</span></p>
-        <button type="button" class="btn">Start Quiz</button>
+    <div id="parent">
+        <div class="main-box container hide">
+            <h3>Instruction:</h3>
+            <p>Total number of questions: <span class="total-question">5</span></p>
+            <button type="button" class="btn">Start Quiz</button>
+        </div>
+    
+        <div class="quiz-box container">
+            <p id="time-display">Timer</p>
+            <div class="question-number">
+                Question 1 of 5:
+            </div>
+            <div id="questionTitle" class="question-text"></div>
+            <div class="option-container" id="optionContainer">
+                <div class="option" data-target="1"></div>
+                <div class="option" data-target="2"></div>
+                <div class="option" data-target="3"></div>
+                <div class="option" data-target="4"></div>
+            </div>
+            <div class="next-question-btn">
+                <button type="button" id="nextBtn" class="btn">Next</button>
+            </div>
+            <div class="answer-indicator">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="result-box container">
+            <h3>Quiz Result</h3>
+            <table>
+                <tr>
+                    <td>Total Question</td>
+                    <ta> <span class="total-question">5</span> </ta>
+                </tr>
+                <tr>
+                    <td>Attempt</td>
+                    <ta> <span class="total-attempt">5</span> </ta>
+                </tr>
+            </table>
+        </div>
     </div>
-
-    <div class="quiz-box container">
-        <p id="time-display">Timer</p>
-        <div class="question-number">
-            Question 1 to 5:
-        </div>
-        <div id="questionTitle" class="question-text"></div>
-        <div class="option-container" id="optionContainer">
-            <div class="option" data-target="1"></div>
-            <div class="option" data-target="2"></div>
-            <div class="option" data-target="3"></div>
-            <div class="option" data-target="4"></div>
-        </div>
-        <div class="next-question-btn">
-            <button type="button" id="nextBtn" class="btn">Next</button>
-        </div>
-        <div class="answer-indicator">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <div class="result-box custom-box">
-        <h1>Quiz Result</h1>
-        <table>
-            <tr>
-                <td>Total Question</td>
-                <ta> <span class="total-question">5</span> </ta>
-            </tr>
-            <tr>
-                <td>Attempt</td>
-                <ta> <span class="total-attempt">5</span> </ta>
-            </tr>
-        </table>
-    </div>
+    
     <script src="quizapp.js"></script>
     <script src="app.js"></script>
 </body>
